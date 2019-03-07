@@ -8,6 +8,7 @@ var monkey_question = 'Did I have a pet monkey? Y/N';
 var sing_question = 'Can I sing? Y/N';
 var total_questions = 7;
 var correct_answers = 0;
+
 user_response = prompt(dog_question); //1st question
 console.log(dog_question);
 if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
@@ -53,8 +54,8 @@ if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES'
 } else {
     alert(invalid_answer);
 }
-var number_of_dog_question = 'You have 4 chances to guess how many dogs do I live with?'; //6th question
-var chances_dog_question = 4; //number of chances user gets to guess
+var chances_dog_question = 4;
+var number_of_dog_question = 'Guess how many dogs do I live with?'; //6th question
 while (chances_dog_question > 0) {
     user_response = prompt(number_of_dog_question);
     console.log(number_of_dog_question);
@@ -63,12 +64,11 @@ while (chances_dog_question > 0) {
     } else if (user_response > 4) {
         alert('Too high!');
     } else if (user_response === '4'){
-        alert('You are Correct');
+        alert('You are Correct!');
         break;
     } else {
         alert('Please enter a number'); 
     }
-    chances_dog_question--;
 }
 var states = [ //states i lived in
     'california', //0 index; var i 
@@ -86,6 +86,6 @@ while(chances_states_question > 0) {
             alert('You are Correct!');
             chances_states_question = 0;
         } 
-    }
+    }       
     chances_states_question--
 }
