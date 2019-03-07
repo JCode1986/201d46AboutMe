@@ -9,6 +9,7 @@ var sing_question = 'Can I sing? Y/N';
 var total_questions = 7;
 var correct_answers = 0;
 
+function question1() {
 user_response = prompt(dog_question); //1st question
 console.log(dog_question);
 if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
@@ -18,6 +19,10 @@ if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES'
 } else {
     alert(invalid_answer);
 }
+}
+question1();
+
+function question2() {
 user_response = prompt(sleep_question); //2nd question
 console.log(sleep_question);
 if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
@@ -27,6 +32,10 @@ if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES'
 } else {
     alert(invalid_answer);
 }
+}
+question2();
+
+function question3() {
 user_response = prompt(sky_diving_question); //3rd question
 console.log(sky_diving_question);
 if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
@@ -36,6 +45,10 @@ if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES'
 } else {
     alert(invalid_answer);
 }
+}
+question3();
+
+function question4() {
 user_response = prompt(monkey_question); //4th question
 console.log(monkey_question);
 if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
@@ -45,6 +58,10 @@ if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES'
 } else {
     alert(invalid_answer);
 }
+}
+question4();
+
+function question5() {
 user_response = prompt(sing_question); //5th question
 console.log(sing_question);
 if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
@@ -54,6 +71,10 @@ if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES'
 } else {
     alert(invalid_answer);
 }
+}
+question5();
+
+function question6() {
 var chances_dog_question = 4;
 var number_of_dog_question = 'Guess how many dogs do I live with?'; //6th question
 while (chances_dog_question > 0) {
@@ -70,6 +91,11 @@ while (chances_dog_question > 0) {
         alert('Please enter a number'); 
     }
 }
+}
+question6();
+
+
+function question7() {
 var states = [ //states i lived in
     'california', //0 index; var i 
     'arizona', 
@@ -89,3 +115,5 @@ while(chances_states_question > 0) {
     }       
     chances_states_question--
 }
+}
+question7();
