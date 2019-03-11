@@ -18,7 +18,6 @@ console.log('User name is :' + user_name);
 var user_name_response = 'Hi there ' + user_name + '! Welcome to a guessing game to know more about Joseph!';
 alert(user_name_response);
 
-//need to add correct answers for questions; total of correct answers; tally users answers more console log for debugging
 function question1() {
     (user_response = prompt(dog_question)); //1st question
     if (user_response.toUpperCase() === 'Y' || user_response.toUpperCase() === 'YES') {
