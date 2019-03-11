@@ -2,9 +2,15 @@
 h1 {
     text-align: center;
     background-color: cornflowerblue;
+    font-size:36px;
+    border-radius: 20px;
+    width: 270 px;
 }
 .headers {
     font-size: 20px;
+    display: inline;
+    background-color: aqua;
+    border-radius: 30px;
 }
 body {
     background-color: skyblue;
